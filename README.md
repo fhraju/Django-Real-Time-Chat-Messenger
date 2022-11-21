@@ -1,1 +1,1 @@
-# Real-Time-Chat-Messenger
+# Django-Real-Time-Chat-Messenger
