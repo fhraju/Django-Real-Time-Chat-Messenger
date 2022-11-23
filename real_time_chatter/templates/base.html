@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Chatter</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <!--CSS_Custom-->
+    {% include "./snippets/base_css.html" %}
+    <!--JavaScript-->
+    {% include "./snippets/base_js.html" %}
+    <!-- Header -->
+    {% include "./snippets/header.html" %}
+
+    <!-- Body -->
+    <style type="text/css">
+        .main{
+            min-height: 100vh;
+            height: 100%;
+        }
+    </style>
+    <div class="main">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+
+    <!-- Footer -->
+    {% include "./snippets/footer.html" %}
+    <script src="{% static "bootstrap/js/bootstrap.bundle.min.js" %></script>
+</body>
+</html>
